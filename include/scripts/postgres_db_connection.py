@@ -1,18 +1,18 @@
 """
-        Script made by: Emmanuel Amador Maldonado
-        
-        This script helps to make a connection to any postgres database
-        This creates the engine using sqlachemy and psycopg2, this last
-        library does not need to be installed as is a package inside
-        sqlalchemy
-        
-        This script contains three functions
-        
-        - create_connection(database_name, host, user, password, port)
-        
-        - read_sql(path_to_sql_file, connection)
-        
-        - run_query(query, connection)
+    Script made by: Emmanuel Amador Maldonado
+    
+    This script helps to make a connection to any postgres database
+    This creates the engine using sqlachemy and psycopg2, this last
+    library does not need to be installed as is a package inside
+    sqlalchemy
+    
+    This script contains three functions
+    
+    - create_connection(database_name, host, user, password, port)
+    
+    - read_sql(path_to_sql_file, connection)
+    
+    - run_query(query, connection)
         
     
     
