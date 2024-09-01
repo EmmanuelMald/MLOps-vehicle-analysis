@@ -44,11 +44,15 @@ selected_cols = ["make",
                  "annual_fuel_cost_for_fuel_type2"
                  ]
 
+
+
 veh_info = veh_info[selected_cols]
 x_data = veh_info.drop("annual_petroleum_consumption_for_fuel_type1") 
 y_data = veh_info.annual_petroleum_consumption_for_fuel_type1
 veh_info_cat = veh_info.select_dtypes("object")
 veh_info_num = veh_info.select_dtypes("number")
+
+
 
 print(f"Numeric features: {veh_info_num.shape[1]}\nCategorical features:{veh_info_cat.shape[1]}\nTotal variables:{veh_info.shape[1]}")
 
