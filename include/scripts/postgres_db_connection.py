@@ -20,9 +20,6 @@
 
 import pandas as pd
 from sqlalchemy import create_engine
-from yaml import safe_load
-
-CONFIG_FILE = r'../sql_queries/'
 
 
 class database(object):
