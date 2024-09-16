@@ -3,7 +3,7 @@ queries:
 
 datasets:
   veh_data: https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model/exports/parquet?lang=en&timezone=America%2FGuatemala
-  veh_data_schema: ../include/files/veh_data_schema.json
+  veh_data_schema: ../files/veh_data_schema.json
 
 graphs_config:
   makers:
@@ -28,7 +28,7 @@ update_layout:
     title:
       font:
         family: Arial
-        color: blue
+        color: '#000080'
         size: 12
         style: italic
 
