@@ -1,0 +1,41 @@
+# This workflow, each time that the co2_emission_estimator.pkl is
+# modified, or co2_estimator_model_creation.ipynb is modified
+# it will run this CI and calculate the r2_score and RMSE, 
+# if r2_score is lower than 0.85 or RMSE > 100, then it won't allow
+# to merge the PR into the main branch
+
+name: ML model evalation
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    model-evaluation:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+
+            - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: '3.11.4'
+            
+            - name: Install Poetry
+              run: |
+                  curl -sSL https://install.python-poetry.org | python3 -
+                  export PATH="$HOME/.local/bin:$PATH"
+
+            - name: Install dependencies using Poetry
+              run: |
+                    poetry install  --all-extras # Install all the dependencies based on pyproject.toml
+            
+            - name: evaluate co2 emission estimator model
+              run: |
+                    poetry run python include/scripts/train_model.py 
