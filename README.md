@@ -47,7 +47,7 @@ This will allow to run all the scripts and notebooks of this repo!
 
 ## Machine Learning Models
 
-To have some reference on how this model was built, go to the Github Pages of this repo. All the information related to the libraries and functions used are held there.
+To have some reference on how this model was built, go to the [**Github Pages**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/) of this repo. All the information related to the libraries and functions used are held there.
 
 
 
