@@ -10,9 +10,13 @@ on:
     push:
         branches:
             - main
+        paths:
+          - include/models/**
     pull_request:
         branches:
             - main
+        paths:
+          - include/models/**
 
 jobs:
     model-evaluation:
