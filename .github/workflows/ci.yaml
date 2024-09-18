@@ -38,4 +38,4 @@ jobs:
             
             - name: evaluate co2 emission estimator model
               run: |
-                    poetry run python include/scripts/co2_estimator_model_evaluation.py 
+                    poetry run python include/scripts/co2_estimator_model_evaluation.py  
