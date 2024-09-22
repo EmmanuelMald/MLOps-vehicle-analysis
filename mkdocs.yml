@@ -1,4 +1,13 @@
-site_name: MKLorum
-nav:
-  - Home: index.md
-  - About: about.md
+site_name: Vehicle Emmissions and Autonomy Estimator
+
+theme:
+  name: swan
+  include_sidebar: True
+
+nav:  
+  - Introduction: index.md
+  - Data preparation: data_preparation.md
+  - Machine Learning models: machine_learning.md
+  - CI/CD pipelines: cicd.md
+  - Model deployment: deployment.md
+  

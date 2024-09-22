@@ -21,6 +21,7 @@ pyarrow = "^17.0.0"
 dash-bootstrap-components = "^1.6.0"
 python-dotenv = "^1.0.1"
 seaborn = "^0.13.2"
+mkdocs-swan = "^0.4.0"
 
 
 [tool.poetry.group.dev.dependencies]

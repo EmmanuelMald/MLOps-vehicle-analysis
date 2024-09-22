@@ -47,6 +47,27 @@ Then, run:
 
 This will allow to run all the scripts and notebooks of this repo!
 
+## Machine Learning Models
+
+### CO<sub>2</sub> estimator
+
+This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car based on the next parameters:
+
+- Make
+- Basemodel
+- Engine displacement (L)
+- Transmission
+- Cylinders
+- Vehicle Size Class
+- Vehicle Year
+- Drive
+- General fuel type
+- Specific fuel type
+- Electric motor
+- Start-stop feature
+
+A *multiple linear regression* was implemented in this model
+
 ## Official Documentation
 
 All the information related to: 
