@@ -8,6 +8,10 @@ The goal of this repository is to create and deploy some ML models that can pred
 
 Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emissions. 
 
+##Content
+
+[How to run this repo](#how-to-run-this-repo)
+
 ## How to run this repo:
 
 ### 1. Clone this repo
