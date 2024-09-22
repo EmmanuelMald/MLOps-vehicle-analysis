@@ -81,7 +81,7 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 
 A *multiple linear regression* was implemented in this model
 
-To know more about how to use this model, go to [**CO2 estimator**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/machine_learning/)
+To know more about how to use this model, go to [**CO2 estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
 
 ## Documentation
 
@@ -90,7 +90,7 @@ All the information related to:
 - *Sources of data*
 - *Deployment*
 
-can be found in the [**Documentation**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/) of this repository
+can be found in the [**Documentation**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/) of this repository
 
 
 
