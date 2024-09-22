@@ -8,9 +8,16 @@ The goal of this repository is to create and deploy some ML models that can pred
 
 Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emissions. 
 
-##Content
+## Content
 
-[How to run this repo](#how-to-run-this-repo)
+[**How to run this repo**](#how-to-run-this-repo)
+
+[**Machine Learning Models**](#machine-learning-models)
+
+- [**CO<sub>2</sub> emissions estimator**](#co2-estimator)
+
+[**Documentation**](#documentation)
+
 
 ## How to run this repo:
 
@@ -28,7 +35,7 @@ You can follow the instruction from the [**poetry documentation**](https://pytho
 
 I highly recommend using the official installer
 
-### 4. Setting up the your localdev
+### 4. Setting up your localdev
 
 If you're using pyenv, I highly recommend to run this command on the root of this repository:
 
@@ -72,14 +79,14 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 
 A *multiple linear regression* was implemented in this model
 
-## Official Documentation
+## Documentation
 
 All the information related to: 
 - *Machine learning models*
 - *Sources of data*
 - *Deployment*
 
-can be found in the [**Official Documentation**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/) of this repository
+can be found in the [**Documentation**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/) of this repository
 
 
 
