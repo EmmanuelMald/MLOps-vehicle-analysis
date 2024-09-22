@@ -1,12 +1,25 @@
-# MLOps-vehicle-analysis
+# Vehicle CO<sub>2</sub> emissions & autonomy estimators
 
 The goal of this repository is to create and deploy some ML models that can predict:
 
-- CO<sub>2</sub> emissions
+- CO<sub>2</sub> emissions (g/km)
 
-- The km/L of a vehicle
+- Autonomy (km/L)
 
-Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emission. 
+Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emissions. 
+
+**This model can predict the automony and emissions of some different types of fuel: gasoline, electricity, hydrogen, among others**
+
+## Content
+
+[**How to run this repo**](#how-to-run-this-repo)
+
+[**Machine Learning Models**](#machine-learning-models)
+
+- [**CO<sub>2</sub> emissions estimator**](#co2-estimator)
+
+[**Documentation**](#documentation)
+
 
 ## How to run this repo:
 
@@ -22,11 +35,13 @@ Follow the link to find instructions about how to install it based on your opera
 
 You can follow the instruction from the [**poetry documentation**](https://python-poetry.org/docs/#installing-with-the-official-installer)
 
-### 4. Setting up the your localdev
+I highly recommend using the official installer
+
+### 4. Setting up your localdev
 
 If you're using pyenv, I highly recommend to run this command on the root of this repository:
 
-    #only if you haven't install python 3.11.4 yet
+    # only if you haven't install python 3.11.4 yet
     pyenv install 3.11.4 
 
 Then run:
@@ -47,8 +62,35 @@ This will allow to run all the scripts and notebooks of this repo!
 
 ## Machine Learning Models
 
-To have some reference on how this model was built, go to the Github Pages of this repo. All the information related to the libraries and functions used are held there.
+### CO<sub>2</sub> estimator
 
+This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car based on the next parameters:
+
+- Make
+- Basemodel
+- Engine displacement (L)
+- Transmission
+- Cylinders
+- Vehicle Size Class
+- Vehicle Year
+- Drive
+- General fuel type
+- Specific fuel type
+- Electric motor
+- Start-stop feature
+
+A *multiple linear regression* was implemented in this model
+
+To know more about how to use this model, go to [**CO2 estimator**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/machine_learning/)
+
+## Documentation
+
+All the information related to: 
+- *Machine learning models*
+- *Sources of data*
+- *Deployment*
+
+can be found in the [**Documentation**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/) of this repository
 
 
 
