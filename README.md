@@ -1,4 +1,4 @@
-# MLOps vehicle analysis
+# Vehicle CO<sub>2</sub> emissions & autonomy estimators
 
 The goal of this repository is to create and deploy some ML models that can predict:
 
@@ -7,6 +7,8 @@ The goal of this repository is to create and deploy some ML models that can pred
 - Autonomy (km/L)
 
 Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emissions. 
+
+**This model can predict the automony and emissions of some different types of fuel: gasoline, electricity, hydrogen, among others**
 
 ## Content
 
@@ -78,6 +80,8 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 - Start-stop feature
 
 A *multiple linear regression* was implemented in this model
+
+To know more about how to use this model, go to [**CO2 estimator**](https://emmanuelmald.github.io/MLOps-vehicle-analysis/machine_learning/)
 
 ## Documentation
 
