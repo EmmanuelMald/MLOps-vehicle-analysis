@@ -6,14 +6,12 @@ import pandas as pd
 INCLUDE_DIR = Path(__file__).parent.parent
 MODEL_DIR = INCLUDE_DIR / "models/co2_emission_estimator.joblib"
 app = Flask(__name__)
-print(MODEL_DIR)
 model = joblib.load(MODEL_DIR)
 
 @app.route("/predict", methods = ["POST"])
 def predict():
     data = request.get_json()
     data = pd.DataFrame(data["features"])
-    print(data)
     prediction = model.predict(data)
     return jsonify({"prediction": prediction.tolist()})
 
