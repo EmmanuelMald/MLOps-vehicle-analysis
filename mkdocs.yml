@@ -7,7 +7,9 @@ theme:
 nav:  
   - Introduction: index.md
   - Data preparation: data_preparation.md
-  - Machine Learning models: machine_learning.md
+  - Machine Learning models: 
+    - Tools implemented: machine_learning.md
+    - CO2 emissions estimator: co2_estimator.md
   - CI/CD pipelines: cicd.md
   - Model deployment: deployment.md
   
