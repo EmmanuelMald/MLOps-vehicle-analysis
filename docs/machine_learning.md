@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # ***Machine Learning Models***
 
 Both machine learning models were developed in Python; the main libraries used were:
@@ -69,3 +70,15 @@ This metric tells how much of the variation of the data can be described by the 
 ### **Root Mean Squared Error (RMSE)**
 
 It measures the average magnitude of the errors between predicted and actual values. It provides an idea of how well a model's predictions match the observed data. Lower values means a better model performance. Since RMSE has the same unit as the target variable, it's easy to interpret as the mean deviation to the real value. 
+=======
+## ***Machine Learning Models***
+
+Python was fully used for the development of this project, the libraries 
+
+- *pandas*: Data Extraction &  Transformation 
+- *numpy*: Data Transformation
+- *scikit-learn*: Model development
+- *joblib*: Save the trained model
+- *seaborn*: Data Visualization
+- *matplotlib*: Data Visualization
+>>>>>>> bd5c342f535b4d36b9a7cf75f46e949980ed4208

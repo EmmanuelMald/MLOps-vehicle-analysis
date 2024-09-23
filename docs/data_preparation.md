@@ -19,12 +19,17 @@ The dataset has some column names that might not be so self-descriptive Neverthe
 
 Some of the processes that were implemented are:
 
+<<<<<<< HEAD
 ### ***Basic Data Understanding***
+=======
+**Basic Data Understanding**
+>>>>>>> bd5c342f535b4d36b9a7cf75f46e949980ed4208
 
 Data understanding is not a data transformation process itself, but I consider important to understand the basics of each column, some of the questions answered in this process were:
 
 - Does a column has the necessary not null values to be set as a parameter for the ML model? *In this section, if the column has a lot of missing values - more than 80%, then I wasn't used* 
 
+<<<<<<< HEAD
 - Is the information in that column meaningful for the model? *(This is a first approach, but It will be addressed in depth during feature selection - described in the [**Machine learning models**](http://localhost:8000/machine_learning/) section)*
 
 - Are the column information easily retrievable/known to set it as a parameter to the models? *Its important to define parameters that can truly be known and set as entries of the model*
@@ -36,6 +41,19 @@ This first analysis was achievable using the metadata and some basic Exploratory
 There were some columns that should be used as numbers, or bool values, but the dataset was trating them as strings or viceversa. In that case, its important to set the right values to the columns to avoid errors. 
 
 ### ***Data Imputation***
+=======
+- Is the information in that column meaningful for the model? *(This is a first approach, but It will be addressed in depth during feature selection)*
+
+- Are the column information easily retrievable/known to set it as a parameter to the models? *Its important to define parameters that can truly be known*
+
+Using the metadata and some basic Exploratory Data Analysis, some columns of the dataset were chosen to create the ML models. 
+
+**Changing the data type of some columns**
+
+There were some columns that should be used as numbers, or bool values, but the dataset was trating them as strings or viceversa. In that case, its important to set the right values to the columns to avoid errors. 
+
+**Data imputation**
+>>>>>>> bd5c342f535b4d36b9a7cf75f46e949980ed4208
 
 Is the process in which some missing data is filled with values according to the data. Use this method carefully, as this can modify the data distribution.
 
@@ -55,6 +73,7 @@ All the features (numeric and categorical) were encoded using the OrdinalEncoder
 
 In this case, 'False', '0', and 'None', are some of the values used on the different types of missing data.
 
+<<<<<<< HEAD
 ### ***Dropping Duplicates***
 
 Even when each row in the dataset has an unique ID, some columns that will be used by the model has the same values, so this rows were dropped. 
@@ -67,6 +86,12 @@ Some columns were originally measure using the english system of units. Neverthe
 
 As the original dataset didn't have intuitive column names, it was decided to change those names to more intuitive ones.
 
+=======
+**Dropping duplicates**
+
+Even when each row in the dataset has an unique ID, some columns that will be used by the model has the same values, so this rows were dropped. 
+
+>>>>>>> bd5c342f535b4d36b9a7cf75f46e949980ed4208
 ## ***Data Load***
 Once the data was cleaned, the resulting dataset were saved as *vehicle_data_prepared.parquet*. 
 
