@@ -259,6 +259,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Data Transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-data-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Data Understanding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-imputation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Imputation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropping-duplicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dropping Duplicates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-unit-of-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Unit of Measure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renaming-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renaming Columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -284,16 +344,80 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../machine_learning/" class="md-nav__link">
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Machine Learning models
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine_learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tools implemented
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co2_estimator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CO2 emissions estimator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -380,6 +504,66 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Data Transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-data-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Data Understanding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing Data Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-imputation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Imputation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropping-duplicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dropping Duplicates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-unit-of-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing the Unit of Measure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renaming-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Renaming Columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -416,23 +600,23 @@
 <p>The dataset has some column names that might not be so self-descriptive Nevertheless, this dataset has some metadata that can be used to understand the columns, in this case, a json file was created to store the metadata, which can be consulted <a href="https://public.opendatasoft.com/explore/dataset/all-vehicles-model/information/?sort=modifiedon"><strong>here</strong></a>.</p>
 <h2 id="data-transformation"><strong><em>Data Transformation</em></strong></h2>
 <p>Some of the processes that were implemented are:</p>
-<p><strong>Basic Data Understanding</strong></p>
+<h3 id="basic-data-understanding"><strong><em>Basic Data Understanding</em></strong></h3>
 <p>Data understanding is not a data transformation process itself, but I consider important to understand the basics of each column, some of the questions answered in this process were:</p>
 <ul>
 <li>
 <p>Does a column has the necessary not null values to be set as a parameter for the ML model? <em>In this section, if the column has a lot of missing values - more than 80%, then I wasn't used</em> </p>
 </li>
 <li>
-<p>Is the information in that column meaningful for the model? <em>(This is a first approach, but It will be addressed in depth during feature selection)</em></p>
+<p>Is the information in that column meaningful for the model? <em>(This is a first approach, but It will be addressed in depth during feature selection - described in the <a href="http://localhost:8000/machine_learning/"><strong>Machine learning models</strong></a> section)</em></p>
 </li>
 <li>
-<p>Are the column information easily retrievable/known to set it as a parameter to the models? <em>Its important to define parameters that can truly be known</em></p>
+<p>Are the column information easily retrievable/known to set it as a parameter to the models? <em>Its important to define parameters that can truly be known and set as entries of the model</em></p>
 </li>
 </ul>
-<p>Using the metadata and some basic Exploratory Data Analysis, some columns of the dataset were chosen to create the ML models. </p>
-<p><strong>Changing the data type of some columns</strong></p>
+<p>This first analysis was achievable using the metadata and some basic Exploratory Data Analysis.</p>
+<h3 id="changing-data-types"><strong><em>Changing Data Types</em></strong></h3>
 <p>There were some columns that should be used as numbers, or bool values, but the dataset was trating them as strings or viceversa. In that case, its important to set the right values to the columns to avoid errors. </p>
-<p><strong>Data imputation</strong></p>
+<h3 id="data-imputation"><strong><em>Data Imputation</em></strong></h3>
 <p>Is the process in which some missing data is filled with values according to the data. Use this method carefully, as this can modify the data distribution.</p>
 <p>There are different methods for data imputation based on the type of the data and its context. For this project, some of the methods implemented were:</p>
 <p><em>KNNImputer:</em> </p>
@@ -442,8 +626,12 @@
 <p>All the features (numeric and categorical) were encoded using the OrdinalEncoder.</p>
 <p><em>Setting a value that represents the missing data</em></p>
 <p>In this case, 'False', '0', and 'None', are some of the values used on the different types of missing data.</p>
-<p><strong>Dropping duplicates</strong></p>
+<h3 id="dropping-duplicates"><strong><em>Dropping Duplicates</em></strong></h3>
 <p>Even when each row in the dataset has an unique ID, some columns that will be used by the model has the same values, so this rows were dropped. </p>
+<h3 id="changing-the-unit-of-measure"><strong><em>Changing the Unit of Measure</em></strong></h3>
+<p>Some columns were originally measure using the english system of units. Nevertheless, to have a more intuitive vision of the units, the International  System of Units was used. To do so, some transformations had to be done.</p>
+<h3 id="renaming-columns"><strong><em>Renaming Columns</em></strong></h3>
+<p>As the original dataset didn't have intuitive column names, it was decided to change those names to more intuitive ones.</p>
 <h2 id="data-load"><strong><em>Data Load</em></strong></h2>
 <p>Once the data was cleaned, the resulting dataset were saved as <em>vehicle_data_prepared.parquet</em>. </p>
 <p>Some of the advantages of the <em>parquet</em> extension over the <em>csv</em> or <em>xslx</em> extension is that the parquet file uses a column storage process rather than csv and xslx, that uses row storage process. This is a more efficient way to store data as it can retrieve only some columns instead of the whole dataset if needed. Also, parquet works better for large amount of data.</p>
