@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 INCLUDE_DIR = Path(__file__).parent.parent
-MODEL_DIR = INCLUDE_DIR / "models/co2_emission_estimator.joblib"
+MODEL_DIR = INCLUDE_DIR / "development/model/co2_emissions.joblib"
 app = Flask(__name__)
 model = joblib.load(MODEL_DIR)
 
