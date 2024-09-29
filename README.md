@@ -18,6 +18,8 @@ Based on some parameters such as fuel type, make, basemodel, etc. Allowing to ex
 
 - [**CO<sub>2</sub> emissions estimator**](#co2-estimator)
 
+- [**Autonomy estimator**](#autonomy-estimator-kml)
+
 [**Documentation**](#documentation)
 
 
