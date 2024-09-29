@@ -3,7 +3,7 @@
 
 ## ***Feature Selection***
 
-All the features used was the ones with a MI value higher than 0.2, this is:
+All the features used was the ones with a MI (Mutual Information) score higher than 0.2, this is:
 
 - ***basemodel***: Basemodel of the vehicle (ex: Forte, F-150, Mustang, etc).
 

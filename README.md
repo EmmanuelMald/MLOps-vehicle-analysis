@@ -18,6 +18,8 @@ Based on some parameters such as fuel type, make, basemodel, etc. Allowing to ex
 
 - [**CO<sub>2</sub> emissions estimator**](#co2-estimator)
 
+- [**Autonomy estimator**](#autonomy-estimator-kml)
+
 [**Documentation**](#documentation)
 
 
@@ -71,8 +73,8 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 - Engine displacement (L)
 - Transmission
 - Cylinders
-- Vehicle Size Class
-- Vehicle Year
+- Vehicle size class
+- Vehicle year
 - Drive
 - General fuel type
 - Specific fuel type
@@ -83,6 +85,20 @@ A *multiple linear regression* was implemented in this model
 
 
 To know more about how to use this model, go to [**CO<sub>2</sub> estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
+
+### Autonomy Estimator (km/L)
+
+This model returns the total estimated autonomy of a vehicle combining the city and highway consumption of the main fuel used.
+
+The parameters used to estimate it are:
+
+- Basemodel
+- Engine displacement (L)
+- Cylinders
+- Transmission
+- Vehicle size class
+
+To know how to use this model, go to [**Autonomy estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/autonomy_estimator/)
 
 ## Documentation
 
