@@ -8,7 +8,9 @@ The goal of this repository is to create and deploy some ML models that can pred
 
 Based on some parameters such as fuel type, make, basemodel, etc. Allowing to experiment with personalized vehicles and see how each feature might impact on the car autonomy and CO<sub>2</sub> emissions. 
 
-**This model can predict the automony and emissions of some different types of fuel: gasoline, electricity, hydrogen, among others**
+Both models are containerized using [**Docker**](https://www.docker.com/) and deployed on [**Render**](https://render.com/)
+
+*Render can take approx 50 seconds to answer your first request.
 
 ## Content
 
@@ -91,9 +93,14 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 - Electric motor
 - Start-stop feature
 
+
 A *multiple linear regression* was implemented in this model
 
-To know more about how to use this model, go to [**CO<sub>2</sub> estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
+Endpoint to consume this model: https://vehicle-co2-emission-estimator.onrender.com/predict 
+
+*see an example of how to send a post request on *co2_estimator/unit_tests/testing_api.ipynb*
+
+To know more about this model, go to [**CO<sub>2</sub> estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
 
 ### Autonomy Estimator (km/L)
 
@@ -108,7 +115,11 @@ The parameters used to estimate it are:
 - Transmission
 - Vehicle size class
 
-To know how to use this model, go to [**Autonomy estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/autonomy_estimator/)
+Endpoint to consume this model: https://veh-autonomy-estimator.onrender.com/predict
+
+*see an example of how to send a post request on *autonomy_estimator/unit_tests/testing_api.ipynb*
+
+To know more about this model, go to [**Autonomy estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/autonomy_estimator/)
 
 ## Documentation
 
