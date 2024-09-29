@@ -95,6 +95,7 @@ The parameters used to estimate it are:
 - Basemodel
 - Engine displacement (L)
 - Cylinders
+- Make
 - Transmission
 - Vehicle size class
 
