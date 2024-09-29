@@ -98,7 +98,7 @@ The parameters used to estimate it are:
 - Transmission
 - Vehicle size class
 
-To know how to use this model, go to [**Autonomy estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
+To know how to use this model, go to [**Autonomy estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/autonomy_estimator/)
 
 ## Documentation
 
