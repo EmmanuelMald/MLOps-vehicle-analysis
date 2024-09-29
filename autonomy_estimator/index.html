@@ -17,16 +17,16 @@
       
       
       <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.37">
     
     
       
-        <title>CI/CD pipelines - Vehicle Emmissions and Autonomy Estimator</title>
+        <title>Autonomy estimator - Vehicle Emmissions and Autonomy Estimator</title>
       
     
     
 
-      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
       
       
 
@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#autonomy-estimator" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -118,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CI/CD pipelines
+              Autonomy estimator
             
           </span>
         </div>
@@ -210,17 +215,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -234,7 +241,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Machine Learning models
@@ -283,15 +290,8 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
+              
+                
   
   
     
@@ -303,16 +303,107 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Autonomy estimator
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    CI/CD pipelines
+    Autonomy estimator
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model implemented
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model implemented">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-normalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Normalizacion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -355,6 +446,67 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model implemented
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model implemented">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-encoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-normalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Normalizacion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -369,9 +521,35 @@
                   
 
 
-  <h1>CI/CD pipelines</h1>
-
-
+<h1 id="autonomy-estimator"><strong><em>Autonomy Estimator</em></strong></h1>
+<h2 id="feature-selection"><strong><em>Feature Selection</em></strong></h2>
+<p>All the features used was the ones with a MI (mutual information) score higer than 0.3:</p>
+<ul>
+<li>
+<p><strong><em>basemodel</em></strong>: Basemodel of the vehicle (ex: Forte, F-150, Mustang, etc).</p>
+</li>
+<li>
+<p><strong><em>engine_displacement_liters</em></strong>: Total volume that displace the cylinders (ex. 2, 4, 6, 8, etc)</p>
+</li>
+<li>
+<p><strong><em>cylinders</em></strong>: Number of cylinders of a vehicle. (ex: 3, 4, 8, etc)</p>
+</li>
+<li>
+<p><strong><em>transmission</em></strong>: Type of transmission. See all the transmissions <a href="http://www.fueleconomy.gov/feg/findacarhelp.shtml#trany"><strong>here</strong></a> (ex: Automatic 3-spd, Manual 4-spd, etc)</p>
+</li>
+<li>
+<p><strong><em>vehicle_size_class</em></strong>: Vehicle segment (ex: Compact Cars, Large Cars, Small Sport Utility Vehicle 2WD, etc)</p>
+</li>
+</ul>
+<p>The <em>engine_displacement_liters</em> and <em>cylinders</em> has a strong negative linear relation with the target variable (<em>combined_kmpl_for_fuel_type1</em>), with a spearman correlation lower than -0.8</p>
+<h2 id="model-implemented"><strong><em>Model implemented</em></strong></h2>
+<p>Considering that the target variable is continous, and the high linear relationship between <em>engine_displacement_liters</em> and <em>cylinders</em>. It was decided to implement a <strong>Multiple Linear Regression</strong> and test its ability to predict new values.</p>
+<h3 id="feature-encoding"><strong><em>Feature Encoding</em></strong></h3>
+<p>In this case, as all the categories does not have any order/numeric relation, all of them were encoded using OneHotEncoder due to avoids possible relationships between categories that does not exist and might be created using <strong>OrdinalEncoder</strong>, especially when working with multiple linear regression, which is very sensitive to the order/hierarchy of the numbers. </p>
+<h3 id="feature-normalizacion"><strong><em>Feature Normalizacion</em></strong></h3>
+<p>Also, as multiple linear regression is sensitive to the ranges of the features, it was decided to use MinMaxScaler to normalize all the numeric values in a range between 0 and 1. As all the categorical features also have values between 0 and 1 due to OneHotEncoder, it wasn't necessary to normalize them.</p>
+<h2 id="model-evaluation"><strong><em>Model Evaluation</em></strong></h2>
+<p>Using cross validation, the R2 was about 0.94, and the RMSE was near 1.11 km/L, making a very precise model. It wasn't necessary to create another model.</p>
 
 
 
@@ -425,7 +603,7 @@
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../assets/javascripts/bundle.d6f25eb3.min.js"></script>
       
         <script src="../search/main.js"></script>
       
