@@ -6,6 +6,8 @@ All the features used was the ones with a MI (mutual information) score higer th
 
 - ***basemodel***: Basemodel of the vehicle (ex: Forte, F-150, Mustang, etc).
 
+- ***make***: The company or brand that manufactured a vehicle (ex: Lamborghini, Ford, Kia, etc)
+
 - ***engine_displacement_liters***: Total volume that displace the cylinders (ex. 2, 4, 6, 8, etc)
 
 - ***cylinders***: Number of cylinders of a vehicle. (ex: 3, 4, 8, etc)
