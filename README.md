@@ -33,13 +33,23 @@ I highly recommend to install [**pyenv**](https://github.com/pyenv/pyenv?tab=rea
 
 Follow the link to find instructions about how to install it based on your operating system.
 
-### 3. Install *poetry*
+### 3. Install *make* (optional)
+
+Make is used to compile and build projects and automating a wide variety of repetitive tasks.
+
+You can download it [**here**](https://gnuwin32.sourceforge.net/packages/make.htm)
+
+### 4. Install *poetry*
 
 You can follow the instruction from the [**poetry documentation**](https://python-poetry.org/docs/#installing-with-the-official-installer)
 
 I highly recommend using the official installer
 
-### 4. Setting up your localdev
+### 5. Download Docker-Desktop
+
+To containerize the APIs which the models can be consumed, Docker-desktop was choosen. You can download it [**here**](https://www.docker.com/products/docker-desktop/)
+
+### 6. Setting up your localdev
 
 If you're using pyenv, I highly recommend to run this command on the root of this repository:
 
@@ -82,7 +92,6 @@ This model returns the grams of CO<sub>2</sub> emitted per kilometer by a car ba
 - Start-stop feature
 
 A *multiple linear regression* was implemented in this model
-
 
 To know more about how to use this model, go to [**CO<sub>2</sub> estimator**](https://emmanuelmald.github.io/Vehicle-CO2-Emissions-and-Autonomy-Estimators/machine_learning/)
 
