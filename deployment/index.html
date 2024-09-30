@@ -330,6 +330,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Model deployment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -339,6 +350,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#save-a-trained-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save a trained model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-to-consume-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint to consume the model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containerize-the-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containerize the endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment to Render
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -364,6 +430,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#save-a-trained-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save a trained model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-to-consume-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint to consume the model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#containerize-the-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containerize the endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-to-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment to Render
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -377,7 +487,19 @@
                   
 
 
-<h1 id="model-deployment"><strong>Model Deployment</strong></h1>
+<h1 id="model-deployment"><strong><em>Model Deployment</em></strong></h1>
+<p>This steps were followed for each ML model:</p>
+<h2 id="save-a-trained-model"><strong><em>Save a trained model</em></strong></h2>
+<p>Once the model has been proved to give the expected accuracy, it is needed to save it.</p>
+<p>To do so, <em>joblib</em> was used, which is a Python library that helps to save Python objects. It is especially efficient with large numpy arrays, making it faster than the standard pickle module for scientific computing tasks.</p>
+<h2 id="endpoint-to-consume-the-model"><strong><em>Endpoint to consume the model</em></strong></h2>
+<p>The model to be consumed in production needs an endpoint to query the saved model and deliver the prediction. In this project, an API was created using <em>Flask</em>, which is a web framework to develop web applications, APIs, and microservices; Is know by its ease of use and high customization. </p>
+<h2 id="containerize-the-endpoint"><strong><em>Containerize the endpoint</em></strong></h2>
+<p>Once the API has proven that works as expected, its time to containerize it. To do so, <em>docker</em> was used to create an image of the API, and then store it in <em>DockerHub</em>. Once the image is store there, it can be pulled by anyone and be used in docker. Nevertheless, we want to deploy this image on a server in order to create a url that everyone can use, without the need of using docker.</p>
+<h2 id="deployment-to-render"><strong><em>Deployment to Render</em></strong></h2>
+<p>Render is a fully managed cloud platform that provides hosting services for web applications, APIs, static websites, databases, and more. Render offers a free tier, making it a great option for personal projects or testing out deployments before scaling up to paid plans.</p>
+<p>It has integration with docker, so any image can be pulled from it and then being used by the server.</p>
+<p>This last step is crutial due to this server delievers a world-wide url, which you can access to request predictions to the your saved model.</p>
 
 
 
