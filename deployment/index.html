@@ -497,9 +497,10 @@
 <h2 id="containerize-the-endpoint"><strong><em>Containerize the endpoint</em></strong></h2>
 <p>Once the API has proven that works as expected, its time to containerize it. To do so, <em>docker</em> was used to create an image of the API, and then store it in <em>DockerHub</em>. Once the image is store there, it can be pulled by anyone and be used in docker. Nevertheless, we want to deploy this image on a server in order to create a url that everyone can use, without the need of using docker.</p>
 <h2 id="deployment-to-render"><strong><em>Deployment to Render</em></strong></h2>
-<p>Render is a fully managed cloud platform that provides hosting services for web applications, APIs, static websites, databases, and more. Render offers a free tier, making it a great option for personal projects or testing out deployments before scaling up to paid plans.</p>
+<p><em>Render</em> is a fully managed cloud platform that provides hosting services for web applications, APIs, static websites, databases, and more. It offers a free tier, making it a great option for personal projects or testing out deployments before scaling up to paid plans.</p>
 <p>It has integration with docker, so any image can be pulled from it and then being used by the server.</p>
-<p>This last step is crutial due to this server delievers a world-wide url, which you can access to request predictions to the your saved model.</p>
+<p>This last step is crutial due to this server delievers a world-wide url, which you can access to request predictions to the your saved model. </p>
+<p>In this case, a manual deployment was implemented, nevertheless, it can also use CICD to improve the automation to productionize your models.</p>
 
 
 
